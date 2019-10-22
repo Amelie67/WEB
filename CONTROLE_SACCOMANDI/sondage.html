@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Sondage</title>
+    <link rel="stylesheet" href="styles/index.css" type="text/css" />
+    <link rel="stylesheet" href="styles/sondage.css" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+</head>
+
+<body>
+    <header>
+        <img src="images/survey.png" title="Logo" alt="Logo" class="logo" />
+        <h1>Mon Petit Site de Sondage</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li class="active"><a href="sondage.html">Sondage</a></li>
+                <li><a href="about.html">A propos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Sondage</h2>
+        <p>Description du sondage</p>
+        <form action="#" method="post" name="myForm">
+            <fieldset>
+                <legend>Quel est votre niveau en HTML?</legend>
+                <input type="radio" name="test" value="Très bon" />Très bon
+                <input type="radio" name="test" value="Bon" />Bon
+                <input type="radio" name="test" value="Moyen" />Moyen
+                <input type="radio" name="test" value="Médiocre" />Médiocre
+                <input type="radio" name="test" value="En quoi?" />En quoi?
+            </fieldset>
+            <input class="send" type="submit" value="Envoyer" />
+        </form>
+        <h2>Résultats</h2>
+        <p>Niveau HTML</p>
+        <p>Nombre de participants:<span class="participants">71</span></p>
+        <div class="progress">
+            <div>
+                <p>Très bon</p>
+                <progress value="30" max="100"></progress>
+            </div>
+            <div>
+                <p>Bon</p>
+                <progress value="35" max="100"></progress>
+            </div>
+            <div>
+                <p>Moyen</p>
+                <progress value="40" max="100"></progress>
+            </div>
+            <div>
+                <p>Médiocre</p>
+                <progress value="5" max="100"></progress>
+            </div>
+            <div>
+                <p>En quoi?</p>
+                <progress value="15" max="100"></progress>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright - 2019 - <a href="about.html">Mentions légales </a></p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="CSS Valide !" />
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>

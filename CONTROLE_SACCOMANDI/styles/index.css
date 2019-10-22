@@ -1,0 +1,131 @@
+header {
+    position: relative;
+    text-align: end;
+    height: 105px;
+}
+
+header img {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    display: inline;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    left: auto;
+}
+
+nav ul {
+    display: block;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+    background-color: #34b725;
+    border: 1px solid #34b725;
+    margin: -4px;
+    width: 85px;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li.active {
+    background-color: white;
+    border: 1px solid #34b725;
+}
+
+nav li.active a {
+    color: #34b725;
+}
+
+article {
+    display: block;
+    position: relative;
+    border: 1px solid #34b725;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin: 10px;
+}
+
+article img {
+    display: inline-block;
+    width: 50%;
+    opacity: 0.5;
+}
+
+article div {
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+
+article div h2 {
+    position: absolute;
+    top: 20px
+}
+
+article div p {
+    position: absolute;
+    top: 60px;
+}
+
+article div a {
+    color: #34b725;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+p a {
+    color: #34b725;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    position: sticky;
+    background-color: #34b725;
+    padding: 2px;
+    text-align: center;
+    bottom: 0px;
+}
+
+footer a {
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (min-width: 650px) {
+    header {
+        height: 150px;
+        text-align: center;
+    }
+    article {
+        width: 46%;
+        display: inline-block;
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    header {
+        height: 175px;
+    }
+    body {
+        width: 900px;
+        margin: auto;
+    }
+}
